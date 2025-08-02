@@ -18,7 +18,7 @@ export default function Home() {
   const [selectedEvent, setSelectedEvent] = useState<Event | null>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const userTier = getUserTier(user)
+  const userTier = getUserTier(user ?? null)
 
   useEffect(() => {
     if (user) {

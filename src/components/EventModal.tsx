@@ -1,5 +1,4 @@
 'use client'
-/* eslint-disable react/no-unescaped-entities */
 
 import { Event } from '@/lib/supabase'
 import { getTierColor } from '@/lib/userTier'
@@ -87,7 +86,7 @@ export default function EventModal({ event, isOpen, onClose }: EventModalProps) 
           </div>
 
           <div className="mb-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">What's Included</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">What&apos;s Included</h3>
             <div className="bg-gray-50 rounded-lg p-4">
               {event.tier === 'free' && (
                 <ul className="space-y-1 text-gray-700">
@@ -107,7 +106,7 @@ export default function EventModal({ event, isOpen, onClose }: EventModalProps) 
               {event.tier === 'gold' && (
                 <ul className="space-y-1 text-gray-700">
                   <li>• VIP access</li>
-                  <li>• Meet & greet with speakers</li>
+                  <li>• Meet &amp; greet with speakers</li>
                   <li>• Premium catering</li>
                   <li>• Exclusive networking session</li>
                   <li>• Swag bag</li>

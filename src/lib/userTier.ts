@@ -1,8 +1,9 @@
 import { User } from '@clerk/nextjs/server'
+import type { UserResource } from '@clerk/types'
 
 export type UserTier = 'free' | 'silver' | 'gold' | 'platinum'
 
-export const getUserTier = (user: User | null): UserTier => {
+export const getUserTier = (user: User | UserResource | null | undefined): UserTier => {
   if (!user) return 'free'
   
   const tier = user.publicMetadata?.tier as UserTier

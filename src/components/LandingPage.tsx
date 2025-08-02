@@ -1,9 +1,7 @@
 'use client'
-/* eslint-disable */
 
 import { SignInButton, SignUpButton } from '@clerk/nextjs'
 import { Calendar, Users, Star, Shield, Crown, Gem } from 'lucide-react'
-import Image from 'next/image'
 
 export default function LandingPage() {
   return (
@@ -119,7 +117,7 @@ export default function LandingPage() {
         <div className="bg-blue-600 rounded-2xl p-8 text-center text-white">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-xl mb-6 opacity-90">
-            Join thousands of professionals who've elevated their careers through our platform.
+            Join thousands of professionals who&apos;ve elevated their careers through our platform.
           </p>
           <SignUpButton mode="modal">
             <button className="px-8 py-4 bg-white text-blue-600 text-lg font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-lg">
