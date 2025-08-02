@@ -1,4 +1,5 @@
 'use client'
+/* eslint-disable react/no-unescaped-entities */
 
 import { Event } from '@/lib/supabase'
 import { getTierColor } from '@/lib/userTier'

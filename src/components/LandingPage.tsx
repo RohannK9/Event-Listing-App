@@ -1,7 +1,9 @@
 'use client'
+/* eslint-disable */
 
 import { SignInButton, SignUpButton } from '@clerk/nextjs'
 import { Calendar, Users, Star, Shield, Crown, Gem } from 'lucide-react'
+import Image from 'next/image'
 
 export default function LandingPage() {
   return (

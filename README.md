@@ -34,3 +34,48 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+## Setup Instructions
+
+
+### 1. Clone & Install
+```bash
+git clone <YOUR-REPO-URL>
+cd event-listing-app
+npm install # or yarn install / pnpm install
+```
+
+### 2. Configure Environment Variables
+Create a `.env` file at the project root and add the following keys (replace the dummy values with your own):
+
+```env
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+```
+
+### 3. Run the Development Server
+```bash
+npm run dev # or yarn dev / pnpm dev / bun dev
+```
+Visit [http://localhost:3000](http://localhost:3000) to view the app.
+
+### 4. Build & Start (Production)
+```bash
+npm run build
+npm start
+```
+
+---
+
+## Demo User Credentials
+
+| Tier      | Email                  | Password     |
+|-----------|------------------------|--------------|
+| Free      | k.rohannc1@gmail.com    | kRohann@123 |
+| Silver    | rohann.keerth@gmail.com     | Rohann@123 |
+| Gold      | rohannk99999@gmail.com       | Rohann@1234 |
+| Platinum  | justinrajesh69@gmail.com   | Justin@16969 |
